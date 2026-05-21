@@ -1,0 +1,57 @@
+{
+  "name": "rn-dynamic-form-builder",
+  "version": "1.0.0",
+  "description": "Dynamic form builder for React Native",
+  "keywords": [
+    "react-native",
+    "form-builder",
+    "dynamic-form",
+    "formik",
+    "yup"
+  ],
+  "homepage": "https://github.com/Niralak025/rn-dynamic-form-builder#readme",
+  "bugs": {
+    "url": "https://github.com/Niralak025/rn-dynamic-form-builder/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niralak025/rn-dynamic-form-builder.git"
+  },
+  "license": "MIT",
+  "author": "Niralak025",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "watch": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "react-native-country-codes-picker": "^2.3.5",
+    "react-native-element-dropdown": "^2.12.4",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.2"
+  },
+  "peerDependencies": {
+    "formik": ">=2.0.0",
+    "react": "*",
+    "react-native": "*"
+  },
+  "module": "dist/index.js",
+  "react-native": "dist/index.js",
+  "sideEffects": false
+}
